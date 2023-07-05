@@ -1,0 +1,12 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="robot_id" default="1" />
+  <!-- main -->
+  <node pkg="prj_jimaki" name="team_jimaki" type="jimaki_final.py" output="screen" ns="robot$(arg robot_id)" />
+  <node
+  name="dynamic_reconfigure_config"
+  pkg="dynamic_reconfigure"
+  type="dynparam"
+  args="load /robot$(arg robot_id)/move_base/DWAPlannerROS $(find prj_jimaki)/param/our_config.yaml"/>
+  
+</launch>
