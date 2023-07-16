@@ -1,7 +1,3 @@
-# MAIN PROJECT
-
-[[_TOC_]]
-
 ## Team details
 
 Team name : **JIMAKI**
